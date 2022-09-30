@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Tracker | Stats (Category) | 2022</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../subject/subject.css" />
+    <link rel="stylesheet" href="../stats/stats.css">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- Head Icon -->
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+  </head>
+  <body>
+    <div class="fullBox">
+      <div class="navbarBox">
+        <div class="logoName">
+          <img src="../images/name.png" />
+          <img src="../images/logo.png" />
+        </div>
+        <div class="linksTab">
+          <a href="/" class="navBtn">
+            <i class="fas fa-home"></i><span>Home</span>
+          </a>
+          <a href="/subject/" class="navBtn" >
+            <i class="fas fa-marker"></i><span>Subject</span>
+          </a>
+          <a href="/category/" class="navBtn">
+            <i class="fab fa-uncharted"></i><span>Category</span>
+          </a>
+          <a href="/stats/" class="navBtn" >
+            <i class="far fa-chart-bar"></i><span>Stats</span>
+          </a>
+          <a href="/stats2/" class="navBtn" id="current">
+            <i class="fas fa-chart-area"></i><span>Mix Stats</span>
+          </a>
+        </div>
+      </div>
+      <div class="contentBox">
+        <!-- Content appear here ... -->
+        <div class="mainBox">
+          <h1>Stats (Category)</h1>
+          <p class="smallText">Select category to see stats.</p>
+        </div>
+        <!-- For selecting subject -->
+        <div class="mainBox">
+          <div class="formInput">
+            <label>Category</label>
+            <select id="subjectData">
+            </select>
+          </div>
+          <button class="submitBtn" onclick="getSubjectGraph()">Show Graph</button>
+        </div>
+        <div class="mainBox">
+          <h1>Last 7 day stats</h1>
+          <p class="smallText">Select category to see stats.</p><br/>
+          <p class="smallText" id="totalTime"></p>
+          <p class="smallText" id="averageTime"></p>
+        </div>
+        <div class="mainBox">
+          <div class="graph">
+            <!-- Bar 1 -->
+            <div class="bar">
+              <div class="eachBar" ></div>
+              <div class="barContent" ></div>
+              <div class="dateShow"></div>
+            </div>
+            <!-- Bar 2 -->
+            <div class="bar">
+              <div class="eachBar" ></div>
+              <div class="barContent" ></div>
+              <div class="dateShow"></div>
+            </div>
+            <!-- Bar 3 -->
+            <div class="bar">
+              <div class="eachBar" ></div>
+              <div class="barContent" ></div>
+              <div class="dateShow"></div>
+            </div>
+            <!-- Bar 4 -->
+            <div class="bar">
+              <div class="eachBar" ></div>
+              <div class="barContent" ></div>
+              <div class="dateShow"></div>
+            </div>
+            <!-- Bar 5 -->
+            <div class="bar">
+              <div class="eachBar" ></div>
+              <div class="barContent" ></div>
+              <div class="dateShow"></div>
+            </div>
+            <!-- Bar 6 -->
+            <div class="bar">
+              <div class="eachBar" ></div>
+              <div class="barContent" ></div>
+              <div class="dateShow"></div>
+            </div>
+            <!-- Bar 7 -->
+            <div class="bar">
+              <div class="eachBar" ></div>
+              <div class="barContent" ></div>
+              <div class="dateShow"></div>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+    
+
+    <script src="../initial.js"></script>
+    <script src="stats.js"></script>
+  </body>
+</html>

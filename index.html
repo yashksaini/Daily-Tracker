@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="./subject/subject.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- Head Icon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+  </head>
+  <body>
+    <div class="fullBox">
+      <div class="navbarBox">
+        <div class="logoName">
+          <img src="images/name.png" />
+          <img src="images/logo.png" />
+        </div>
+        <div class="linksTab">
+          <a href="/" class="navBtn" id="current">
+            <i class="fas fa-home"></i><span>Home</span>
+          </a>
+          <a href="/subject/" class="navBtn">
+            <i class="fas fa-marker"></i><span>Subject</span>
+          </a>
+          <a href="/category/" class="navBtn">
+            <i class="fab fa-uncharted"></i><span>Category</span>
+          </a>
+          <a href="/stats/" class="navBtn">
+            <i class="far fa-chart-bar"></i><span>Stats</span>
+          </a>
+          <a href="/stats2/" class="navBtn">
+            <i class="fas fa-chart-area"></i><span>Mix Stats</span>
+          </a>
+        </div>
+      </div>
+      <div class="contentBox">
+        <!-- Content appear here ... -->
+        <div class="mainBox">
+          <h1>Daily Tracker</h1>
+          <p class="smallText">
+            Developed by Yash Kumar Saini <br />
+            © 2022 All Rights Reserved.
+          </p>
+          <br />
+          <p class="smallText">
+            If no subject appear, start adding subjects in subject section.
+          </p>
+          <p class="smallText"><b>* Required</b></p>
+        </div>
+
+        <div class="mainBox">
+          <!-- Form appear here -->
+          <h1>Add Data</h1>
+          <div class="formInput">
+            <label>Date *</label>
+            <input type="date" id="dateData" />
+          </div>
+          <div class="formInput">
+            <label>Duration (min) *</label>
+            <input
+              type="number"
+              placeholder="Duration in min"
+              id="durationData"
+            />
+          </div>
+          <div class="formInput">
+            <label>Subject *</label>
+            <select id="subjectData">
+              <option hidden value="">Select Subject</option>
+            </select>
+          </div>
+          <button class="submitBtn" onclick="addData()">Add Data</button>
+        </div>
+        <div class="mainBox">
+          <h1>Filled Data</h1>
+          <p class="smallText">Last 20 Entries appear here.</p>
+        </div>
+        <div class="mainBox">
+          <div id="dataEntered"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="initial.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

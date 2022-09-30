@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Tracker | Category | 2022</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../subject/subject.css" />
+    <link rel="stylesheet" href="category.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- Head Icon -->
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+  </head>
+  <body>
+    <div class="fullBox">
+      <div class="navbarBox">
+        <div class="logoName">
+          <img src="../images/name.png" />
+          <img src="../images/logo.png" />
+        </div>
+        <div class="linksTab">
+          <a href="/" class="navBtn">
+            <i class="fas fa-home"></i><span>Home</span>
+          </a>
+          <a href="/subject/" class="navBtn">
+            <i class="fas fa-marker"></i><span>Subject</span>
+          </a>
+          <a href="/category/" class="navBtn" id="current">
+            <i class="fab fa-uncharted"></i><span>Category</span>
+          </a>
+          <a href="/stats/" class="navBtn">
+            <i class="far fa-chart-bar"></i><span>Stats</span>
+          </a>
+          <a href="/stats2/" class="navBtn">
+            <i class="fas fa-chart-area"></i><span>Mix Stats</span>
+          </a>
+        </div>
+      </div>
+      <div class="contentBox">
+        <!-- Content appear here ... -->
+        <div class="mainBox">
+          <h1>Categories</h1>
+          <p class="smallText">Write category name and add a new category.</p>
+          <div class="addBox">
+            <input
+              type="text"
+              placeholder="Category name here . . ."
+              id="subject"
+              autocomplete="off"
+            />
+            <button onclick="addSubject()">Add Category</button>
+          </div>
+        </div>
+        <div class="mainBox">
+          <h1 id="status"></h1>
+          <p class="smallText">All added categories appear below.</p>
+        </div>
+        <div class="mainBox">
+          <div id="dataEntered"></div>
+        </div>
+      </div>
+
+      <!-- Modal For Updating Category -->
+      <div class="modal hide" id="updateModal">
+        <div class="modal-body">
+          <div class="close">
+            <i class="fas fa-times" onclick="changeModal()"></i>
+          </div>
+
+          <h1>Update Category</h1>
+          <div class="formInput">
+            <label>Update Name</label>
+            <input
+              type="text"
+              placeholder="Update category name ..."
+              id="updateName"
+            />
+          </div>
+          <button class="submitBtn" onclick="updateData()">Update</button>
+        </div>
+      </div>
+      <!-- Modal For adding subject to category -->
+      <div class="modal hide" id="subCatModal">
+        <div class="modal-body">
+          <div class="close">
+            <i class="fas fa-times" onclick="changeModal1()"></i>
+          </div>
+          <h1 id="categoryName"></h1>
+          <h2 class="titleText">Added Subjects</h2>
+          <div class="showTags" id="addedSubjects"></div>
+          <div class="line"></div>
+          <h2 class="titleText">Left Subjects</h2>
+          <div class="showTags" id="leftSubjects"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../initial.js"></script>
+    <script src="category.js"></script>
+  </body>
+</html>

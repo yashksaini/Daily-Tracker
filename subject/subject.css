@@ -1,0 +1,300 @@
+.mainBox {
+  width: 610px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+  margin: 16px auto;
+  background-color: var(--white);
+  border: 1px solid var(--mutedGrey);
+  border-radius: 8px;
+  border-top: 6px solid var(--grey);
+}
+.mainBox h1 {
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--dark);
+}
+#status {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--dark);
+}
+.smallText {
+  color: var(--mutedDark);
+  margin: 8px 0 0 0;
+  padding-left: 2px;
+  font-size: 14px;
+}
+.addBox {
+  width: 100%;
+  margin: 16px auto 0 auto;
+  text-align: right;
+  opacity: 0;
+  animation: fadeIn 1s 0s 1 forwards;
+}
+.addBox input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid var(--mutedGrey);
+  box-sizing: border-box;
+  padding: 0 0 0 16px;
+  border-radius: 8px;
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.addBox input:focus {
+  outline: none;
+  border: 1px solid var(--grey);
+}
+.addBox button {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  height: 50px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: var(--white);
+  background-color: var(--mutedDark);
+  border: none;
+  transition: all 0.5s;
+}
+.addBox button:hover {
+  cursor: pointer;
+  background-color: var(--dark);
+  transition: all 0.5s;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--mutedGrey);
+  margin: 16px 0;
+}
+#dataEntered {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 264px;
+  height: 56px;
+  background-color: var(--white);
+  margin: 7px;
+  border-radius: 8px;
+  position: relative;
+  color: var(--mutedDark);
+  overflow: hidden;
+  border: 1px solid var(--mutedGrey);
+  opacity: 0;
+  animation: fadeIn 1s 0s 1 forwards;
+}
+.card p {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 208px;
+  height: 56px;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 16px;
+  overflow: hidden;
+}
+.card p:hover {
+  cursor: pointer;
+  color: var(--dark);
+}
+.card span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  aspect-ratio: 1;
+  border-radius: 8px 8px 0;
+}
+.card span:hover {
+  cursor: pointer;
+}
+.modal {
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #000000a9;
+  opacity: 0;
+  animation: fadeIn 1s 0s 1 forwards;
+  overflow-y: auto;
+}
+
+.modal-body {
+  margin: 32px auto;
+  width: 480px;
+  max-width: calc(100% - 32px);
+  background-color: var(--white);
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 8px;
+  color: var(--mutedDark);
+}
+.close {
+  width: 100%;
+  margin: 4px 0 16px 0;
+  text-align: right;
+}
+.close:hover {
+  cursor: pointer;
+  color: var(--dark);
+}
+.modal-body h1 {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 32px 0;
+}
+.modal-body p {
+  padding-left: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.formInput {
+  width: 100%;
+  height: 48px;
+  position: relative;
+  margin: 24px 0;
+}
+.formInput label {
+  position: absolute;
+  z-index: 2;
+  top: -8px;
+  left: 10px;
+  color: var(--grey);
+  background-color: var(--white);
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 0 4px;
+  line-height: 16px;
+}
+.formInput input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  border: 1px solid var(--mutedGrey);
+  width: 100%;
+  height: 48px;
+  box-sizing: border-box;
+  padding-left: 12px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.formInput select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  border: 1px solid var(--mutedGrey);
+  width: 100%;
+  height: 48px;
+  box-sizing: border-box;
+  padding-left: 12px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.formInput input,
+select:hover {
+  cursor: pointer;
+}
+.formInput input::placeholder {
+  color: var(--mutedGrey);
+}
+.formInput input:focus {
+  outline: none;
+  border: 1px solid var(--grey);
+}
+.formInput:focus-within label {
+  color: var(--mutedDark);
+}
+
+.formInput1 {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  margin: 8px 0;
+  filter: grayscale(100%);
+}
+.formInput1:hover {
+  cursor: pointer;
+}
+.formInput1 input {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.formInput1 label {
+  position: absolute;
+  left: 48px;
+  top: 0px;
+  font-size: 18px;
+  line-height: 40px;
+}
+.formInput1 label:hover {
+  cursor: pointer;
+  color: var(--dark);
+}
+.submitBtn {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  margin: 16px 0 0 0;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--mutedDark);
+  color: var(--white);
+  font-size: 18px;
+  transition: all 0.5s;
+}
+.submitBtn:hover {
+  background-color: var(--dark);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.activeCard {
+  border: 1px solid var(--mutedGrey);
+  background-color: var(--light);
+}
+.hide {
+  display: none;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .card {
+    width: 100%;
+    margin: 7px 0px;
+  }
+  .card p {
+    width: calc(100% - 56px);
+  }
+}

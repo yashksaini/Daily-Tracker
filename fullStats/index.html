@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Tracker</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="fullStats.css" />
+    <link rel="stylesheet" href="../subject/subject.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- Head Icon -->
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+  </head>
+  <body>
+    <div class="fullBox">
+      <div class="navbarBox">
+        <div class="logoName">
+          <img src="../images/name.png" />
+          <img src="../images/logo.png" />
+        </div>
+        <div class="linksTab">
+          <a href="/" class="navBtn">
+            <i class="fas fa-home"></i><span>Home</span>
+          </a>
+          <a href="/subject/" class="navBtn">
+            <i class="fas fa-marker"></i><span>Subject</span>
+          </a>
+          <a href="/category/" class="navBtn">
+            <i class="fab fa-uncharted"></i><span>Category</span>
+          </a>
+          <a href="/stats/" class="navBtn" id="current">
+            <i class="far fa-chart-bar"></i><span>Stats</span>
+          </a>
+          <a href="/stats2/" class="navBtn">
+            <i class="fas fa-chart-area"></i><span>Mix Stats</span>
+          </a>
+        </div>
+      </div>
+      <div class="contentBox">
+        <!-- Content appear here ... -->
+        <div class="mainBox">
+          <h1>Full Stats</h1>
+          <p class="smallText">Select subject and see full stats.</p>
+          <br />
+          <a class="smallText" href="/stats/">Back</a>
+        </div>
+        <!-- For selecting subject -->
+        <div class="mainBox">
+          <div class="formInput">
+            <label>Subject</label>
+            <select id="subjectData"></select>
+          </div>
+          <button class="submitBtn" onclick="showEntries()">Show Stats</button>
+        </div>
+        <div class="mainBox">
+          <h1>Total Time</h1>
+          <p class="smallText" id="inMinutes"></p>
+          <p class="smallText" id="days"></p>
+          <p class="smallText" id="average"></p>
+        </div>
+        <div class="mainBox">
+          <div id="dataEntered">
+            <div class="card1">
+              <p>Stats appear here.. &nbsp;<b></b></p>
+              <h6>Full Stats</h6>
+              <span class="remBtn"><i class="fas fa-skull"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../initial.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

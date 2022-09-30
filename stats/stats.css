@@ -1,0 +1,47 @@
+.graph {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 240px;
+  margin-top: 40px;
+  margin-bottom: 120px;
+  border-bottom: 2px solid var(--mutedGrey);
+  border-left: 2px solid var(--mutedGrey);
+}
+.bar {
+  width: 30px;
+  background-color: var(--light);
+  height: 240px;
+  position: relative;
+}
+.eachBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  background-color: var(--mutedDark);
+}
+.barContent {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -30px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: none !important;
+}
+.dateShow {
+  position: absolute;
+  bottom: -120px;
+  left: 0;
+  width: 30px;
+  height: 120px;
+  writing-mode: vertical-rl;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

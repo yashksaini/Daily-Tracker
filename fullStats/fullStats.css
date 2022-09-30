@@ -1,0 +1,4 @@
+.remBtn i:hover {
+  color: var(--dark);
+  cursor: pointer;
+}

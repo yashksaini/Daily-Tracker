@@ -1,0 +1,32 @@
+.tag {
+  display: inline-block;
+  border: 1px solid var(--mutedGrey);
+  background-color: var(--white);
+  margin: 6px 12px 6px 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 6px 8px;
+}
+.tag p {
+  display: inline;
+  margin-right: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.tag i:hover {
+  cursor: pointer;
+  color: var(--dark);
+}
+.titleText {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 16px 0;
+  color: var(--dark);
+}
+.showTags {
+  background-color: var(--light);
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+  min-height: 90px;
+}
