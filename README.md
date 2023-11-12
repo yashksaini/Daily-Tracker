@@ -14,6 +14,17 @@
 ## Introduction
 The Daily Tracker Application is a comprehensive tool that allows users to track their daily activities efficiently. Users can add subjects to keep track of their work and activities throughout the day. The app provides the flexibility to edit subject names and categorize them into different groups. Categories help users to organize and focus on specific sections of their activities. The application records the time spent on each subject in minutes. It offers a graphical representation of the data, enabling users to visualize their progress and patterns over time. The app includes five main pages in the navigation: Home Page, Subjects Page, Categories Page, Stats Page, and Mix Stats Page. Additionally, there is a separate page for detailed stats of a subject, where users can view and remove specific data entries.
 
+
+---
+
+**⚠️ Warning: WebSQL Deprecated ⚠️**
+
+Please be aware that WebSQL is no longer supported. Consequently, the project will not function as it did previously. Consider migrating to alternative storage solutions such as IndexedDB to ensure compatibility and continued operation.
+
+Thank you for your understanding.
+
+---
+
 ## Demo
 
 
